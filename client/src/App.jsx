@@ -17,7 +17,7 @@ const App = () => {
     const handleGetUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/me",
+          "https://mswdtaskmanagement.onrender.com/api/v1/user/me",
           { withCredentials: true }
         );
         setIsAuthenticated(true);
